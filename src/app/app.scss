@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 20vh;
+}
+
+app-header {
+  display: block;
+}
+
+app-body {
+  display: block;
+  min-height: 60vh;
+}
+
+app-footer {
+  display: block;
+  min-height: 20vh;
+}

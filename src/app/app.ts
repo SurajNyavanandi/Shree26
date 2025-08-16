@@ -6,10 +6,15 @@ import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Header,Body,Footer],
+  imports: [RouterOutlet, Header, Body, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   protected title = 'ram';
+  selectedCategory: string = 'photography';
+
+  onCategoryChange(category: string) {
+    this.selectedCategory = category;
+  }
 }

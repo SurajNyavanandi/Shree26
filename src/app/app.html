@@ -1,6 +1,6 @@
 <h1>Jai Shree Rama</h1>
 <h1>Om Namah Shivaya</h1>
-<app-header></app-header>
-<app-body></app-body>
-<app-footer></app-footer>
+<app-header (categorySelected)="onCategoryChange($event)"></app-header>
+<app-body [selectedCategory]="selectedCategory"></app-body>
+<app-footer [selectedCategory]="selectedCategory"></app-footer>
 <router-outlet></router-outlet>

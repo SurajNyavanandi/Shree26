@@ -1,1 +1,26 @@
-<p>footer works!</p>
+<div class="footer-container">
+  <div class="testimonial-section">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial-carousel">
+      <div class="testimonial-scroll">
+        <div class="testimonial-card" *ngFor="let testimonial of filteredTestimonials">
+          <div class="profile-section">
+            <div class="profile-image">
+              <span>No Image</span>
+            </div>
+            <div class="profile-info">
+              <h4>{{testimonial.name}}</h4>
+              <a [href]="testimonial.instagram" target="_blank" class="instagram-link">
+                @{{testimonial.username}}
+              </a>
+            </div>
+          </div>
+          <div class="rating">
+            <span class="stars">{{getStars(testimonial.rating)}}</span>
+          </div>
+          <p class="review">{{testimonial.review}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
